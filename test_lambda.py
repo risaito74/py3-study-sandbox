@@ -6,7 +6,7 @@ print(add(2, 3))
 hello("taro")
 
 #mapとラムダの組み合わせ
-li = [10, 20, 30, 40]
+li = [10, 20, 30, 40, 50]
 
 li2 = list(map(lambda x: x * 2, li))
 
