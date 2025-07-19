@@ -1,4 +1,4 @@
-# 5章データ構造：リストをスタックとして使う（LIFO: Last In First Out）
+# 5章データ構造：リストをスタックとして使う（LIFO: Last-in First-out）
 li_st = []
 
 box_n = 1
