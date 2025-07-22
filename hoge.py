@@ -1,5 +1,6 @@
 # hoge.py : 6章モジュールでimportするpy
-# "hoge"を返す
+# 文字列"hoge"を返す
 
 def hoge():
+    """ 文字列"hoge"を返す """
     return "hoge"
