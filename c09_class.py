@@ -17,9 +17,12 @@ print(TestClass.__doc__)
 
 # TestClassクラスのインスタンスを生成
 test = TestClass()
+hoge = TestClass()
 
 # インスタンスの変数を直接参照できる
 test.num += 10
+hoge.num = 999
 
 # インスタンスのメソッドをコール
 print(test.get_num())
+print(hoge.get_num())
