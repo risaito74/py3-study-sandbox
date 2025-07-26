@@ -25,3 +25,18 @@ print(f"random() = {num_f}")
 # range(start, stop, step)の要素からランダムに選ばれた要素（整数int型）を返す
 dice = random.randrange(1, 7) # range()と同じ挙動だからstop未満 → stop=7にしないと最大値6が出ない
 print(f"6面ダイスを振った結果:", dice)
+
+# おまけ
+# n文字のa~zのランダム文字列を生成する
+cha_a = ord("a") # 97
+cha_z = ord("z") # 122
+
+# 文字数の設定
+str_len = 10
+
+str = ""
+for _ in range(str_len):
+    n = random.randint(cha_a, cha_z)
+    str += chr(n)
+    
+print(f"a~zの{str_len}文字のランダム文字列: {str}")
