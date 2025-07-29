@@ -12,7 +12,7 @@ import random
 #リストをdeque型データにする
 que_mem = deque(["花海咲季", "月村手毬", "藤田ことね", "紫雲清香", "倉本千奈", "葛城リーリヤ", "花海佑芽"])
 
-que_join = deque(["根尾亜紗里"])
+que_join = deque(["根緒亜紗里"])
 turn_num = 20 # ターン数
 for i in range(turn_num):
     print(f"会場にいる人：{list(que_join)}")
