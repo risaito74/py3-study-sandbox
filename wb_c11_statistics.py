@@ -20,7 +20,7 @@ print("median:", statistics.median(data))
 # variance() データの不偏分散を求める
 # 不偏分散とは、平均との差の2乗の和を「データ数-1」で割って求める
 print("variance:", statistics.variance(data))
-# 出力：
+# 出力：5
 
 # そもそも不偏分散（平均との差の2乗の和を「データ数-1」で割る）ってなんじゃー！！！って思うので、計算処理を書いてみる
 
@@ -39,3 +39,4 @@ sum_d2 = sum(data2)
 ans = sum_d2 / (len(data) - 1)
 
 print("手動計算で求めた不偏分散:", ans)
+# 出力：5.0
