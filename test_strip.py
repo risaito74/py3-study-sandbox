@@ -20,6 +20,11 @@ for i in range(len(data)):
 print("strip()後:", data)
 # 出力：['data1', 'data2', 'data3']
 
+### 内包表記でやる（案外すっきり！）
+data = ["data1", "  data2", "data3  "]
+data = [s.strip() for s in data]
+print("内包表記:", data)
+
 ### 引数を指定する場合
 # str.strip(chars)
 # 引数charsは、削除したい文字の組み合わせを指定する
