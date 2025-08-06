@@ -7,6 +7,7 @@
 a = 100
 b = 100
 
+print(f"a = {a}, b = {b}")
 print(f"a == b: {a == b}")
 # 出力：True
 
@@ -25,6 +26,7 @@ print(f"id(a) = {id(a)}\nid(b) = {id(b)}")
 # シングルトン扱いでキャッシュされてる範囲から外れる値で同一性チェック！
 a = 1234
 b = 1234
+print(f"a = {a}, b = {b}")
 print(f"a is b: {a is b}")
 # 出力：True
 # おい！なんでだよ！責任者でてこい！モンティパイソンでてこい！
@@ -46,6 +48,8 @@ print(f"id(a) = {id(a)}\nid(b) = {id(b)}")
 # じゃあこれでどうじゃ！
 a = 12345
 b = int("12345")
+
+print(f"a = {a}, b = {b}")
 print(f"a == b: {a == b}")
 # 出力：True
 print(f"a is b: {a is b}")
@@ -74,3 +78,26 @@ print(f"id(a) = {id(a)}\nid(b) = {id(b)}")
 # id(b) = 1890471763088
 # ここまでやっても同じオブジェクトになるやつーーーーー！！！
 # Pythonって最適化すごいね！（終）
+
+##### おまけ2 #####
+
+a = "kotone"
+b = "kotone"
+
+print(f"a = {a}, b = {b}")
+print(f"a == b: {a == b}")
+# 出力：True
+print(f"a is b: {a is b}")
+# 出力：True
+# 文字列リテラルも最適化で同一オブジェクトになる
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(f"a = {a}, b = {b}")
+print(f"a == b: {a == b}")
+# 出力：True
+print(f"a is b: {a is b}")
+# 出力：False
+# ミュータブル（可変体）オブジェクトのリストだと確実に同値・別オブジェクトを確認できる
+# 最初からこうしておけばよかった…
