@@ -5,7 +5,7 @@
 # 3かつ5の倍数のときは数字の代わりにFizzBuzzと表示する
 
 def fizzbuzz_y(limit):
-    """ yieldで返すfizzbuzz関数 """
+    """ yield（イールド）で返すfizzbuzz関数 """
     i = 1
     while i <= limit:
         if i % 3 == 0 and i % 5 == 0:
@@ -33,7 +33,7 @@ def fizzbuzz_r(i):
         
     return ans
 
-# yieldでfizzbuzz
+# yield（イールド）でfizzbuzz
 for i in fizzbuzz_y(20):
     print(i)
 
